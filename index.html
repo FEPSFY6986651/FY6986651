@@ -225,8 +225,17 @@ var data = google.visualization.arrayToDataTable([
 
 var options = {
 title: 'Formula 1 Downforce Comparison',
-legend: { position: 'none' }
+legend: { position: 'none' },
+
+hAxis: {
+title: 'Aerodynamic Setup'
+},
+
+vAxis: {
+title: 'Relative Downforce Level'
+}
 };
+
 
 var chart = new google.visualization.ColumnChart(
 document.getElementById('chart_div')
