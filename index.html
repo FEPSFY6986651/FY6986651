@@ -244,6 +244,9 @@ document.getElementById('chart_div')
 chart.draw(data, options);
 
 }
+
+</script>
+
 <div id="last-updated">Loading last update time...</div>
 
 <!-- Verify Button -->
@@ -256,9 +259,9 @@ chart.draw(data, options);
 async function getLastUpdatedTime() {
 
     const username = "fepsfy6986651";
-    const repo = "fy6986651";
+    const repo = "FY6986651";
 
-    const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+   const url = `https://api.github.com/repos/${username}/${repo}/commits`;
 
     try {
 
