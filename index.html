@@ -208,5 +208,35 @@ button.addEventListener("click", showFact);
 
 </script>
 
+<script type="text/javascript">
+
+google.charts.load('current', {'packages':['corechart']});
+
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+var data = google.visualization.arrayToDataTable([
+['Setup', 'Performance Value'],
+['High Downforce', 100],
+['Medium Downforce', 85],
+['Low Downforce', 70]
+]);
+
+var options = {
+title: 'Formula 1 Downforce Comparison',
+legend: { position: 'none' }
+};
+
+var chart = new google.visualization.ColumnChart(
+document.getElementById('chart_div')
+);
+
+chart.draw(data, options);
+
+}
+
+</script>
+ 
 </body>
 </html>
