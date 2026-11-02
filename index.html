@@ -172,5 +172,35 @@ https://www.racecar-engineering.com
 
 </p>
 
+<hr>
+
+<h3 style="text-align:center;">Interactive F1 Aerodynamics Fact</h3>
+
+<div style="text-align:center;">
+
+<button id="factButton">
+Show Aerodynamics Fact
+</button>
+
+<p id="factText"></p>
+
+</div>
+
+<script>
+
+var button = document.getElementById("factButton");
+var text = document.getElementById("factText");
+
+function showFact() {
+
+text.innerHTML =
+"Greater downforce improves cornering performance but creates more aerodynamic drag.";
+
+}
+
+button.addEventListener("click", showFact);
+
+</script>
+
 </body>
 </html>
