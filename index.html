@@ -164,6 +164,37 @@ The optimal aerodynamic setup varies between circuits. Engineers must evaluate f
 Formula 1 teams adjust aerodynamic configurations according to circuit requirements. Tracks such as Monaco contain many slow-speed corners and therefore favour high-downforce setups to maximise grip. In contrast, circuits such as Monza contain long straights where lower drag becomes more important for achieving higher top speeds. Engineers therefore select different wing configurations and aerodynamic settings depending on the demands of each circuit.
 </p>
 
+<h4>Ground Effect Aerodynamics</h4>
+
+<p id="GroundEffect_InText" class="ex1">
+Modern Formula 1 cars rely heavily on ground-effect aerodynamics to generate downforce. Ground effect works by accelerating airflow underneath the car, creating a low-pressure region that pulls the vehicle closer to the track surface. This allows large amounts of downforce to be produced without relying entirely on larger front and rear wings. As a result, engineers can generate grip more efficiently while reducing some of the drag associated with wing-based downforce.
+</p>
+
+<p id="GroundEffect2_InText" class="ex1">
+The introduction of modern ground-effect regulations has significantly changed Formula 1 car design. Teams now devote considerable attention to floor geometry, ride height and airflow management beneath the vehicle. Small changes to underfloor airflow can have a substantial impact on overall performance, demonstrating how important aerodynamics has become in modern Formula 1 engineering.
+</p>
+
+ <h4>Wind Tunnel Testing and CFD</h4>
+
+<p id="CFD_InText" class="ex1">
+Formula 1 teams use advanced engineering tools to optimise aerodynamic performance. One of the most important methods is wind tunnel testing, where scale models of the car are placed in controlled airflow to measure aerodynamic forces. Engineers analyse how air flows around wings, sidepods and the floor of the vehicle to identify improvements that can increase downforce or reduce drag.
+</p>
+
+<p id="CFD2_InText" class="ex1">
+Alongside wind tunnel testing, teams use Computational Fluid Dynamics (CFD), which uses computer simulations to model aerodynamic behaviour. CFD allows engineers to investigate thousands of design variations before manufacturing physical components. By combining simulation data with wind tunnel testing, Formula 1 teams can make informed design decisions and gain valuable performance advantages throughout a season.
+</p>
+
+<h4>Future Developments in Formula 1 Aerodynamics</h4>
+
+<p id="Future_InText" class="ex1">
+Future Formula 1 regulations will continue to focus on balancing performance, sustainability and close racing. Engineers are increasingly developing aerodynamic solutions that improve efficiency while reducing the turbulent air produced behind the car. Reducing aerodynamic turbulence allows following cars to remain closer through corners and creates greater overtaking opportunities during races. This demonstrates that aerodynamic design is not only about producing maximum performance but also about improving the quality of racing.
+</p>
+
+<p id="Future2_InText" class="ex1">
+Advances in simulation software, manufacturing techniques and data analysis are likely to further improve aerodynamic development in Formula 1. However, regardless of future technological improvements, engineers will still face the fundamental challenge of balancing drag and downforce. The need to optimise both straight-line speed and cornering performance ensures that aerodynamic trade-offs will remain a central aspect of Formula 1 engineering for many years.
+</p>
+
+ 
 <table>
 
 <tr>
@@ -403,6 +434,18 @@ const TradeOff2Count = displayWordCount("TradeOff2_InText");
 
 const CircuitCount = displayWordCount("Circuit_InText");
 
+ const GroundEffectCount = displayWordCount("GroundEffect_InText");
+
+const GroundEffect2Count = displayWordCount("GroundEffect2_InText");
+
+const CFDCount = displayWordCount("CFD_InText");
+
+const CFD2Count = displayWordCount("CFD2_InText");
+
+const FutureCount = displayWordCount("Future_InText");
+
+const Future2Count = displayWordCount("Future2_InText");
+
 const totalWordCount =
     AbstractCount +
     IntroductionCount +
@@ -413,7 +456,13 @@ const totalWordCount =
     Drag2Count +
     TradeOffCount +
     TradeOff2Count +
-    CircuitCount;
+    CircuitCount +
+    GroundEffectCount +
+    GroundEffect2Count +
+    CFDCount +
+    CFD2Count +
+    FutureCount +
+    Future2Count;
     document.getElementById("totalWordCount").innerText =
     `Total word count: ${totalWordCount}`;
 
